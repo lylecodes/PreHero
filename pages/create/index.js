@@ -3,6 +3,7 @@ import Layout from "../../components/layout/Layout";
 import Head from "next/head";
 import classes from "./index.module.css";
 import DropdownMenu from "../../components/create/DropdownMenu";
+import CategoryItemsList from "../../components/create/MenuItemLists/CategoryItemsList";
 
 const CreatePage = () => {
   return (
@@ -18,6 +19,7 @@ const CreatePage = () => {
         <section className={classes.page}>
           <DropdownMenu />
         </section>
+        <CategoryItemsList />
       </Layout>
     </Fragment>
   );

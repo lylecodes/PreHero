@@ -49,14 +49,14 @@ const DropdownMenu = () => {
             goToMenu="settings"
             setMenu={setActiveMenuHandler}
           >
-            Settings
+            Stimulants
           </DropdownItem>
           <DropdownItem
             leftIcon="🦧"
             goToMenu="animals"
             setMenu={setActiveMenuHandler}
           >
-            Animals
+            Pump
           </DropdownItem>
         </div>
       </CSSTransition>
@@ -80,12 +80,12 @@ const DropdownMenu = () => {
             leftIcon="🦧"
             setMenu={setActiveMenuHandler}
           >
-            <h2>Languages</h2>
+            <h2>Stimulants</h2>
           </DropdownItem>
-          <DropdownItem leftIcon="🦧">HTML</DropdownItem>
-          <DropdownItem leftIcon="🦧">CSS</DropdownItem>
-          <DropdownItem leftIcon="🦧">JavaScript</DropdownItem>
-          <DropdownItem leftIcon="🦧">Awesome!</DropdownItem>
+          <DropdownItem leftIcon="🦧">Caffeine</DropdownItem>
+          <DropdownItem leftIcon="🦧">Caffeine</DropdownItem>
+          <DropdownItem leftIcon="🦧">Caffeine</DropdownItem>
+          <DropdownItem leftIcon="🦧">Caffeine!</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -107,12 +107,12 @@ const DropdownMenu = () => {
             leftIcon="🦧"
             setMenu={setActiveMenuHandler}
           >
-            <h2>Animals</h2>
+            <h2>Pump</h2>
           </DropdownItem>
-          <DropdownItem leftIcon="🦘">Kangaroo</DropdownItem>
-          <DropdownItem leftIcon="🐸">Frog</DropdownItem>
-          <DropdownItem leftIcon="🦋">Horse?</DropdownItem>
-          <DropdownItem leftIcon="🦔">Hedgehog</DropdownItem>
+          <DropdownItem leftIcon="🦘">Creatine Nitrate</DropdownItem>
+          <DropdownItem leftIcon="🐸">Creatine Nitrate</DropdownItem>
+          <DropdownItem leftIcon="🦋">Creatine Nitrate</DropdownItem>
+          <DropdownItem leftIcon="🦔">Creatine Nitrate</DropdownItem>
         </div>
       </CSSTransition>
     </div>

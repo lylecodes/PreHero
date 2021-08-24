@@ -56,7 +56,7 @@
 
 .dropdownContainer {
   max-width: 100%;
-  height: 100%;
+  height: var(--nav-size);
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -66,15 +66,15 @@
 
 .dropdown {
   position: absolute;
-
+  top: 100px;
   width: 300px;
-  transform: translateX(-45%);
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: 1rem;
   overflow: hidden;
   transition: height var(--speed) ease;
+  margin: 0;
+  padding: 0.5;
 }
 
 .menu {
@@ -82,10 +82,10 @@
 }
 
 .menuItem {
-  height: 50px;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   border-radius: var(--border-radius);
   transition: background var(--speed);
   padding: 0.5rem;
@@ -108,6 +108,7 @@
 }
 
 /* CSSTransition classes  */
+/* Position absolute is making the primary click */
 .menuPrimaryEnter {
   position: absolute;
   transform: translateX(-110%);

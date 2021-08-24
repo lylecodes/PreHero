@@ -1,0 +1,10 @@
+.page {
+  display: flex;
+  justify-content: flex-end;
+  height: 200px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}

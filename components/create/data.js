@@ -1,5 +1,8 @@
-export const categories = [
-  { category: "Strength" },
+export const data = [
+  {
+    category: "Strength",
+    ingredients: ["Beta-Alanine", "Creatine", "Betaine", "Caffeine"],
+  },
   {
     category: "Endurance",
     ingredients: [
@@ -22,5 +25,14 @@ export const categories = [
       "Caffeine",
     ],
   },
-  { category: "Pump", ingredients: ["L-Citrulline", "L-Arginine"] },
+  {
+    category: "Pump",
+    ingredients: [
+      "L-Citrulline",
+      "L-Arginine",
+      "Agmatine Sulfate",
+      "Betaine Anhydrous",
+      "Red Spinach",
+    ],
+  },
 ];

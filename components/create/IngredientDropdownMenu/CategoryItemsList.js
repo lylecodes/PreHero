@@ -1,12 +1,12 @@
 import React from "react";
-import { categories } from "../data";
+import { data } from "../data";
 import MenuItem from "./MenuItem";
 
-const categoryList = categories.map((item, index) => (
-  <MenuItem key={index} id={index} category={item.category} />
-));
-
 const CategoryItemsList = () => {
+  const categoryList = data.map((item, index) => (
+    <MenuItem key={index} id={index} category={item.category} />
+  ));
+
   return (
     <div>
       <h1>Categories</h1>

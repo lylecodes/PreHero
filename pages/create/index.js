@@ -3,7 +3,7 @@ import Layout from "../../components/layout/Layout";
 import Head from "next/head";
 import classes from "./index.module.css";
 import DropdownMenu from "../../components/create/DropdownMenu";
-import CategoryItemsList from "../../components/create/MenuItemLists/CategoryItemsList";
+import IngredientSelectorMenu from "../../components/create/IngredientDropdownMenu/IngredientDropdownMenu";
 
 const CreatePage = () => {
   return (
@@ -13,13 +13,11 @@ const CreatePage = () => {
           <title>Create</title>
           <meta name="description" content="Create Your Pre-Workout!" />
         </Head>
+        <h1 className={classes.heading}>Create!</h1>
         <main className={classes.main}>
-          <h1>Create!</h1>
+          {/* <DropdownMenu /> */}
+          <IngredientSelectorMenu />
         </main>
-        <section className={classes.page}>
-          <DropdownMenu />
-        </section>
-        <CategoryItemsList />
       </Layout>
     </Fragment>
   );

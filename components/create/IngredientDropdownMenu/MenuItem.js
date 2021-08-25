@@ -4,7 +4,7 @@ const MenuItem = (props) => {
   return (
     <li>
       <div>
-        <h2>{props.category}</h2>
+        <h2>{props.category || props.name}</h2>
       </div>
     </li>
   );

@@ -1,16 +1,27 @@
-import React from "react";
+import { Fragment } from "react";
+
 import { data } from "../data";
 import MenuItem from "./MenuItem";
+import classes from "./IngredientDropdownMenu.module.css";
 
-const CategoryItemsList = () => {
+const CategoryItemsList = (props) => {
+  const sendSetMenu = (newMenu) => {
+    props.setMenu(newMenu);
+  };
+
   const categoryList = data.map((item, index) => (
-    <MenuItem key={index} id={index} category={item.category} />
+    <MenuItem
+      key={index}
+      id={index}
+      category={item.category}
+      sendMenu={sendSetMenu}
+    />
   ));
 
   return (
-    <div>
-      <h1>Categories</h1>
-      <ul>{categoryList}</ul>
+    <div className={classes.listContainer}>
+      <h1 className={classes.menuItem}>Categories</h1>
+      <ul className={classes.list}>{categoryList}</ul>
     </div>
   );
 };

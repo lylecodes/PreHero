@@ -3,7 +3,7 @@ import Layout from "../../components/layout/Layout";
 import Head from "next/head";
 import classes from "./index.module.css";
 import DropdownMenu from "../../components/create/DropdownMenu";
-import IngredientSelectorMenu from "../../components/create/IngredientDropdownMenu/IngredientDropdownMenu";
+import IngredientDropdownMenu from "../../components/create/IngredientDropdownMenu/IngredientDropdownMenu";
 
 const CreatePage = () => {
   return (
@@ -16,7 +16,7 @@ const CreatePage = () => {
         <h1 className={classes.heading}>Create!</h1>
         <main className={classes.main}>
           {/* <DropdownMenu /> */}
-          <IngredientSelectorMenu />
+          <IngredientDropdownMenu />
         </main>
       </Layout>
     </Fragment>

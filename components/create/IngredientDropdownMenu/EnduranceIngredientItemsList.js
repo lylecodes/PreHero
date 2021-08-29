@@ -2,22 +2,30 @@ import React from "react";
 
 import { data } from "../data";
 import MenuItem from "./MenuItem";
+import classes from "./IngredientDropdownMenu.module.css";
 
-const EnduranceIngredientItemsList = () => {
-  const [EnduranceData] = data.filter((el) => {
+const EnduranceIngredientItemsList = (props) => {
+  const [enduranceData] = data.filter((el) => {
     return el.category === "Endurance";
   });
-  const EnduranceCategoryTitle = EnduranceData.category;
-  const EnduranceIngredients = EnduranceData.ingredients;
 
-  const EnduranceIngredientsList = EnduranceIngredients.map((item, index) => (
+  const sendSetMenu = (newMenu) => {
+    props.setMenu(newMenu);
+  };
+
+  const enduranceCategoryTitle = enduranceData.category;
+  const enduranceIngredients = enduranceData.ingredients;
+
+  const enduranceIngredientsList = enduranceIngredients.map((item, index) => (
     <MenuItem key={index} id={index} name={item} />
   ));
 
   return (
-    <div>
-      <h1>{EnduranceCategoryTitle}</h1>
-      <ul>{EnduranceIngredientsList}</ul>
+    <div className={classes.listContainer}>
+      <h1 className={classes.menuItem} onClick={() => sendSetMenu("main")}>
+        {enduranceCategoryTitle}
+      </h1>
+      <ul className={classes.list}>{enduranceIngredientsList}</ul>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import classes from "./IngredientDropdownMenu.module.css";
+import classes from "./OverviewMenu.module.css";
 
 const MenuItem = (props) => {
   const displayedName = props.category || props.name;

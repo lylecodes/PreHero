@@ -1,6 +1,6 @@
 import { data } from "../data";
 import MenuItem from "./MenuItem";
-import classes from "./IngredientDropdownMenu.module.css";
+import classes from "./OverviewMenu.module.css";
 
 const CategoryItemList = (props) => {
   const sendSetMenu = (newMenu) => {

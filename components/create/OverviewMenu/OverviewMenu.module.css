@@ -1,0 +1,174 @@
+/* Icon Button */
+.iconButton {
+  --button-size: calc(var(--nav-size) * 0.5);
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: #484a4d;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.iconButton:hover {
+  filter: brightness(1.2);
+}
+
+.iconButton svg {
+  fill: var(--text-color);
+  width: 20px;
+  height: 20px;
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+  /* NO FLEX */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  top: 165px;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  /* overflow: hidden;
+  transition: height var(--speed) ease; */
+}
+
+/* Solves extended hover */
+.list {
+  /* align items gives choppy transition */
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItemContainer {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+/* Justify content centers everything, but li are shifted */
+.menuItem {
+  /* max-width fit content fixes extended hover */
+  height: 100%;
+  max-width: fit-content;
+  width: 100%;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem .icon-button {
+  margin-right: 0.5rem;
+}
+
+.menuItem .icon-button:hover {
+  filter: none;
+}
+
+.menuItem:hover {
+  background-color: #525357;
+  cursor: pointer;
+}
+
+.menuItemName {
+  margin: 1rem;
+}
+
+.icon-right {
+  margin-left: auto;
+}
+
+.menuPrimaryEnter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+.menuPrimaryEnterActive {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menuPrimaryExit {
+  position: absolute;
+}
+.menuPrimaryExitActive {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+.menuStrengthEnter {
+  transform: translateX(110%);
+}
+.menuStrengthEnterActive {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menuStrengthExit {
+}
+.menuStrengthExitActive {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}
+
+.menuEnduranceEnter {
+  transform: translateX(110%);
+}
+
+.menuEnduranceEnterActive {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menuEnduranceExit {
+}
+.menuEnduranceExitActive {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}
+
+.menuFocusEnter {
+  transform: translateX(110%);
+}
+
+.menuFocusEnterActive {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menuFocusExit {
+}
+.menuFocusExitActive {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}
+
+.menuPumpEnter {
+  transform: translateX(110%);
+}
+
+.menuPumpEnterActive {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+.menuPumpExit {
+}
+.menuPumpExitActive {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}

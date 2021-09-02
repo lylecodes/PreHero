@@ -1,24 +1,30 @@
-import { Fragment } from 'react';
-import Layout from '../../components/layout/Layout';
+import { Fragment } from "react";
+import Layout from "../../components/layout/Layout";
 import Head from "next/head";
-import DropdownMenuContainer from '../../components/create/DropdownMenuContainer';
-
+import classes from "./index.module.css";
+import IngredientDropdownMenu from "../../components/create/IngredientDropdownMenu/IngredientDropdownMenu";
+import OverviewContainer from "../../components/create/OverviewMenu/OverviewMenu";
 
 const CreatePage = () => {
-    return (
-        <Fragment>
-        <Layout>
-          <Head>
-            <title>Create</title>
-            <meta name="description" content="Create Your Pre-Workout!" />
-          </Head>
-          <div>Create!</div>
-          <div>
-          <DropdownMenuContainer />
-          </div>
-        </Layout>
-      </Fragment>
-    )
-}
+  return (
+    <div className={classes.body}>
+      <Layout>
+        <Head>
+          <title>Create</title>
+          <meta name="description" content="Create Your Pre-Workout!" />
+        </Head>
+        <h1 className={classes.heading}>Create!</h1>
+        <main className={classes.createMain}>
+          <section className={classes.overviewContainer}>
+            <OverviewContainer />
+          </section>
+          <section className={classes.dropdownContainer}>
+            <IngredientDropdownMenu />
+          </section>
+        </main>
+      </Layout>
+    </div>
+  );
+};
 
 export default CreatePage;

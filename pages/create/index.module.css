@@ -1,0 +1,15 @@
+.body {
+  background-color: rgb(59, 22, 61);
+}
+
+.heading {
+  text-align: center;
+}
+
+.createMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
+}

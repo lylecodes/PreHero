@@ -30,17 +30,11 @@
 .dropdown {
   /* NO FLEX */
   position: absolute;
-  right: 0;
-  top: 165px;
-  width: 30%;
-  /* width: fit-content; */
-  max-width: 30%;
-  max-height: fit-content;
   height: var(--nav-size);
+  width: 30%;
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: 1rem;
   overflow: hidden;
   transition: height var(--speed) ease;
 }
@@ -50,7 +44,6 @@
   /* align items gives choppy transition */
   display: flex;
   flex-direction: column;
-  width: 100%;
   list-style: none;
   padding: 0;
 }
@@ -65,20 +58,16 @@
 }
 
 .menuItemContainer {
-  display: flex;
-  align-items: center;
-  width: 100%;
   padding: 0;
   margin: 0;
 }
 
 /* Justify content centers everything, but li are shifted */
 .menuItem {
-  /* max-width fit content fixes extended hover */
-  height: 100%;
-  width: 100%;
+  height: 50px;
   display: flex;
   align-items: center;
+  /* max-width fit content fixes extended hover */
   border-radius: var(--border-radius);
   /* transition: background var(--speed); */
   padding: 0;
@@ -86,7 +75,6 @@
 }
 
 .menu {
-  width: 100%;
 }
 
 .menuItem .icon-button {
@@ -99,18 +87,13 @@
 
 .menuItem:hover {
   background-color: #525357;
-  overflow: hidden;
   cursor: pointer;
-  width: 100%;
 }
 
 .menuItemName {
-  width: 100%;
-  max-width: 100%;
 }
 
 .icon-right {
-  margin-left: auto;
 }
 
 .menuPrimaryEnter {

@@ -33,6 +33,8 @@
   right: 0;
   top: 165px;
   width: 30%;
+  /* width: fit-content; */
+  max-width: 30%;
   max-height: fit-content;
   height: var(--nav-size);
   background-color: var(--bg);
@@ -48,31 +50,43 @@
   /* align items gives choppy transition */
   display: flex;
   flex-direction: column;
+  width: 100%;
   list-style: none;
   padding: 0;
 }
 
+/* Need this to fix bottom from shifting */
 .listContainer {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .menuItemContainer {
   display: flex;
   align-items: center;
-  width: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* Justify content centers everything, but li are shifted */
 .menuItem {
   /* max-width fit content fixes extended hover */
   height: 100%;
-  max-width: fit-content;
   width: 100%;
+  display: flex;
+  align-items: center;
   border-radius: var(--border-radius);
-  transition: background var(--speed);
+  /* transition: background var(--speed); */
   padding: 0;
   margin: 0;
+}
+
+.menu {
+  width: 100%;
 }
 
 .menuItem .icon-button {
@@ -85,11 +99,14 @@
 
 .menuItem:hover {
   background-color: #525357;
+  overflow: hidden;
   cursor: pointer;
+  width: 100%;
 }
 
 .menuItemName {
-  margin: 1rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .icon-right {

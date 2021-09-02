@@ -1,19 +1,33 @@
-import { data } from "../data";
+import { Fragment, useState, useEffect, useRef } from "react";
+
+import { selectedData } from "../data";
+import IngredientsList from "./IngredientsList";
 import MenuItem from "./MenuItem";
 import classes from "./OverviewMenu.module.css";
 
-const CategoryItemList = (props) => {
-  const sendSetMenu = (newMenu) => {
-    props.setMenu(newMenu);
-  };
-
-  const categoryList = data.map((item, index) => (
-    <MenuItem
-      key={index}
-      id={index}
-      category={item.category}
-      sendMenu={sendSetMenu}
-    />
+const CategoryItemsList = () => {
+  const categoryList = selectedData.map((item, index) => (
+    <Fragment>
+      <MenuItem
+        key={index * Math.random()}
+        id={index * Math.random()}
+        category={item.category}
+      />
+      <IngredientsList ingredientItems={item.ingredients} />
+      {/* {showMenu && (
+        <ul>
+          {item.ingredients.map((ingredient, index) => {
+            return (
+              <MenuItem
+                key={index * Math.random()}
+                id={index * Math.random()}
+                name={ingredient}
+              />
+            );
+          })}
+        </ul>
+      )} */}
+    </Fragment>
   ));
 
   return (
@@ -24,4 +38,4 @@ const CategoryItemList = (props) => {
   );
 };
 
-export default CategoryItemList;
+export default CategoryItemsList;

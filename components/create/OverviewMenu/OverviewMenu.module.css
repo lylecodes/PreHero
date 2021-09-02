@@ -29,18 +29,20 @@
 
 .dropdown {
   /* NO FLEX */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 165px;
-  width: 30%;
-  max-height: fit-content;
-  height: var(--nav-size);
+  width: fit-content;
+  height: fit-content;
   background-color: var(--bg);
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 1rem;
-  overflow: hidden;
-  transition: height var(--speed) ease;
+  /* overflow: hidden;
+  transition: height var(--speed) ease; */
 }
 
 /* Solves extended hover */

@@ -9,7 +9,6 @@ const MenuItem = (props) => {
 
   return (
     <div className={classes.menuItemContainer}>
-      <span className={classes.iconButton}>{props.leftIcon}</span>
       <li className={classes.menuItem} onClick={sendMenuHandler}>
         <h2 className={classes.menuItemName}>{displayedName}</h2>
       </li>

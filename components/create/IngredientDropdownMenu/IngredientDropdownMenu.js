@@ -26,12 +26,10 @@ const IngredientDropdownMenu = () => {
     setActiveMenu(menu);
   };
 
-  console.log(activeMenu);
-
   return (
     <div
       className={classes.dropdown}
-      style={{ height: menuHeight + 30 }}
+      style={{ height: menuHeight + 5 }}
       ref={dropdownRef}
     >
       <CSSTransition

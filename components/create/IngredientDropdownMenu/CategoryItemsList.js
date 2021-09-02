@@ -18,7 +18,11 @@ const CategoryItemList = (props) => {
 
   return (
     <div className={classes.listContainer}>
-      <h1 className={classes.menuItem}>Categories</h1>
+      <h1 className={classes.menuItem}>
+        Categories
+        <span className={classes.iconButton}>{props.leftIcon}</span>
+      </h1>
+
       <ul className={classes.list}>{categoryList}</ul>
     </div>
   );

@@ -29,6 +29,8 @@
 
 .dropdown {
   /* NO FLEX */
+  top: 165px;
+  right: 0;
   position: absolute;
   height: var(--nav-size);
   width: 30%;

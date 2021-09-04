@@ -13,7 +13,7 @@ const CreatePage = () => {
           <title>Create</title>
           <meta name="description" content="Create Your Pre-Workout!" />
         </Head>
-        <h1 className={classes.heading}>Create!</h1>
+        <h1 className={classes.heading}>Create Your Pre-Workout</h1>
         <main className={classes.createMain}>
           <section className={classes.overviewContainer}>
             <OverviewContainer />

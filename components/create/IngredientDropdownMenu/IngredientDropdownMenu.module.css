@@ -54,12 +54,14 @@
 .listContainer {
   display: flex;
   flex-direction: column;
+  background-color: red;
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
 .menuItemContainer {
+  background-color: blue;
   padding: 0;
   margin: 0;
 }
@@ -72,7 +74,7 @@
   /* max-width fit content fixes extended hover */
   border-radius: var(--border-radius);
   /* transition: background var(--speed); */
-  padding: 0;
+  padding-left: 10px;
   margin: 0;
 }
 

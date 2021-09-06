@@ -32,7 +32,7 @@ const CategoryItemsList = () => {
 
   return (
     <div className={classes.listContainer}>
-      <h1 className={classes.menuItem}>Categories</h1>
+      <h1 className={classes.menuItem}>Overview</h1>
       <ul className={classes.list}>{categoryList}</ul>
     </div>
   );

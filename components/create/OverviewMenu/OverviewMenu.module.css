@@ -33,8 +33,8 @@
   justify-content: flex-end;
   align-items: flex-end;
   position: absolute;
-  left: 0;
-  top: 165px;
+  /* left: 0;
+  top: 165px; */
   width: fit-content;
   height: fit-content;
   background-color: var(--bg);
@@ -62,7 +62,7 @@
 .menuItemContainer {
   display: flex;
   align-items: center;
-  width: auto;
+  /* width: auto; */
 }
 
 /* Justify content centers everything, but li are shifted */

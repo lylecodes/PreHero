@@ -62,7 +62,7 @@
 .menuItemContainer {
   display: flex;
   align-items: center;
-  width: auto;
+  /* width: auto; */
 }
 
 /* Justify content centers everything, but li are shifted */

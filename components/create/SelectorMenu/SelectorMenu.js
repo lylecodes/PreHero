@@ -5,6 +5,7 @@ import classes from "./SelectorMenu.module.css";
 const SelectorMenu = () => {
   return (
     <div className={classes.selectorMenu}>
+      Select
       <CategoryNavMenu />
       <IngredientMenu />
     </div>

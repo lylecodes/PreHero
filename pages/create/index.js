@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import Layout from "../../components/layout/Layout";
 import Head from "next/head";
 import classes from "./index.module.css";
-import IngredientDropdownMenu from "../../components/create/IngredientDropdownMenu/IngredientDropdownMenu";
 import OverviewContainer from "../../components/create/OverviewMenu/OverviewMenu";
+import SelectorMenu from "../../components/create/SelectorMenu/SelectorMenu";
 
 const CreatePage = () => {
   return (
@@ -18,8 +18,8 @@ const CreatePage = () => {
           <section className={classes.overviewContainer}>
             <OverviewContainer />
           </section>
-          <section className={classes.dropdownContainer}>
-            <IngredientDropdownMenu />
+          <section className={classes.selectorMenu}>
+            <SelectorMenu />
           </section>
         </main>
       </Layout>

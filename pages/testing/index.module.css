@@ -1,3 +1,14 @@
+.categoryNav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: blue;
+}
+
+.categoryNavItem {
+  background-color: red;
+  width: auto;
+}
+
 .popup {
   width: 120px;
   height: 80px;

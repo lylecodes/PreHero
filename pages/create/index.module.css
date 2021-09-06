@@ -9,7 +9,19 @@
 .createMain {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   height: 50rem;
+}
+
+.overviewContainer {
+  position: relative;
+  height: 50%;
+  width: 30%;
+}
+
+.selectorMenu {
+  position: relative;
+  height: 50%;
+  width: 30%;
 }

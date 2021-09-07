@@ -7,20 +7,28 @@
 }
 
 .createMain {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 10px;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-areas:
+    "overview overview overview"
+    "preContainer selector selector";
   height: 50rem;
 }
 
 .overviewContainer {
+  grid-area: overview;
   position: relative;
   height: 50%;
   width: 30%;
 }
 
+.preContainer {
+  grid-area: preContainer;
+}
+
 .selectorMenu {
+  grid-area: selector;
   position: relative;
   height: 50%;
   width: 30%;

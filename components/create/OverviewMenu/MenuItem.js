@@ -1,16 +1,12 @@
 import classes from "./OverviewMenu.module.css";
 
 const MenuItem = (props) => {
-  const displayedName = props.category || props.name;
-
-  const sendMenuHandler = () => {
-    props.sendMenu(displayedName.toLowerCase());
-  };
+  const displayedName = props.name;
 
   return (
     <div className={classes.menuItemContainer}>
-      <li className={classes.menuItem} onClick={sendMenuHandler}>
-        <h2 className={classes.menuItemName}>{displayedName}</h2>
+      <li className={classes.menuItem}>
+        <h5 className={classes.menuItemName}>{displayedName}</h5>
       </li>
     </div>
   );

@@ -29,9 +29,9 @@
 
 .dropdown {
   /* NO FLEX */
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   position: absolute;
   /* left: 0;
   top: 165px; */
@@ -49,7 +49,7 @@
 .list {
   /* align items gives choppy transition */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style: none;
   padding: 0;
 }
@@ -60,8 +60,11 @@
 }
 
 .menuItemContainer {
+  background-color: red;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
+  /* align-items: center; */
   /* width: auto; */
 }
 

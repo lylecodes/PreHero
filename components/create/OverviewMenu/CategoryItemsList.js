@@ -8,25 +8,15 @@ import classes from "./OverviewMenu.module.css";
 const CategoryItemsList = () => {
   const categoryList = selectedData.map((item, index) => (
     <Fragment>
-      <MenuItem
+      {/* <MenuItem
         key={index * Math.random()}
         id={index * Math.random()}
+        name={item.category}
+      /> */}
+      <IngredientsList
         category={item.category}
+        ingredientItems={item.ingredients}
       />
-      <IngredientsList ingredientItems={item.ingredients} />
-      {/* {showMenu && (
-        <ul>
-          {item.ingredients.map((ingredient, index) => {
-            return (
-              <MenuItem
-                key={index * Math.random()}
-                id={index * Math.random()}
-                name={ingredient}
-              />
-            );
-          })}
-        </ul>
-      )} */}
     </Fragment>
   ));
 

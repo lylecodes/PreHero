@@ -1,9 +1,10 @@
 import { Fragment, useState } from "react";
+import CategoryTitle from "./CategoryTitle";
 
 import MenuItem from "./MenuItem";
 
 const IngredientsList = (props) => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showList, setShowList] = useState(false);
 
   const ingredientItems = props.ingredientItems.map((item, index) => {
     return <MenuItem name={item} />;
@@ -11,8 +12,11 @@ const IngredientsList = (props) => {
 
   return (
     <Fragment>
-      <button onClick={() => setShowMenu(!showMenu)}>Show Menu</button>
-      {showMenu && <ul>{ingredientItems}</ul>}
+      <CategoryTitle
+        name={props.category}
+        toggleList={() => setShowList(!showList)}
+      />
+      {showList && <ul>{ingredientItems}</ul>}
     </Fragment>
   );
 };

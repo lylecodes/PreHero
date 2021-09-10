@@ -1,15 +1,17 @@
 import { Fragment, useState } from "react";
 
 import classes from "./SelectorMenu.module.css";
-import MenuItem from "../OverviewMenu/MenuItem";
+import IngredientMenuListItem from "./IngredientMenuListItem";
 
 const IngredientMenuList = (props) => {
   const [showList, setShowList] = useState(false);
 
-  const showListHandler = () => {};
+  const showListHandler = () => {
+    setShowList(!showList);
+  };
 
   const ingredients = props.ingredients.map((item, index) => {
-    return <MenuItem name={item.name} />;
+    return <IngredientMenuListItem name={item.name} />;
   });
 
   return (
